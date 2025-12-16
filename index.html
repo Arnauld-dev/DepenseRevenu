@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget</title>
+</head>
+<body>
+    <div class="head">
+        <div class="budget">
+            <div class="budget_title">
+                <h3 class="h3">Application de budgetisation</h3>
+            </div>
+            <div class="budjet">
+               <!--<div><h3>Total:0.258+0.69=</h3></div>--> 
+                <div>
+                    <h5 class="totalRevenus">Revenus:0</h5>
+                </div>
+                <div>
+                    <h5 class="totalDepenses">Depenses:<span style="color: red;">0</span></h5>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="erreurProduit"></div>
+        <div class="input">
+            
+            <div  class="input_produit">
+                Nom du produit:
+                 <input type="text" id="input_produit" required>
+            </div>
+            <div  class="input_income">
+                
+               Revenus:
+                <input type="number" id="input_income" required>
+            </div>
+
+            <div class="input_expense" >
+                Dépenses:
+                <input type="number" id="input_expense" required>
+            </div>
+
+            <div class="button">
+                <button id="button" >Validate</button>
+            </div>
+
+        </div>
+     
+        <div class="container">
+            <div class="Income">
+                <h2 class="income_title">Revenus</h2>
+                <div class="income_list">
+                   
+                </div>
+            </div>
+
+
+             <div class="expenses">
+                <h2 class="expenses_title">Dépenses</h2>
+                <div class="expenses_list"></div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
